@@ -1,0 +1,29 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    # Dart 3 best practices
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_fields: true
+    prefer_final_locals: true
+    avoid_print: true
+    use_super_parameters: true
+    require_trailing_commas: false
+
+    # Flutter-specific
+    sized_box_for_whitespace: true
+    use_decorated_box: true
+    use_full_hex_values_for_flutter_colors: true
+
+    # Documentation
+    package_api_docs: false # Disable for student projects
+
+analyzer:
+  errors:
+    # Treat these as errors (strict mode)
+    missing_required_param: error
+    missing_return: error
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
