@@ -1,21 +1,18 @@
 # MINI-PROJECT SHORT TECHNICAL REPORT
 **Course:** Cross-Platform Mobile App Development (VKU)  
 **Mini-Project Title:** Mini-Project 2 — Ứng Dụng Nhận Diện Hóa Đơn On-Device & Quản Lý Chi Tiêu Cá Nhân (VKU Expense OCR)  
-**Team / Student Name:** [Tên Nhóm / Tên Sinh Viên]  
-**Submission Date:** [DD/MM/YYYY]  
+**Team / Student Name:** Lê Xuân Hoài Nam  
+**Submission Date:** 10/10/2026  
 
 ---
 
 ## 1. THÔNG TIN CHUNG & ĐƯỜNG DẪN BÀN GIAO (GENERAL INFORMATION & DELIVERABLE LINKS)
-* **Thành viên nhóm (Team Members):**
-  1. [Họ và Tên Sinh Viên 1] — MSSV: [22ITxxx] — Vai trò: [Trưởng nhóm / Kiến trúc UI & State Management] — Đóng góp: [50%]
-  2. [Họ và Tên Sinh Viên 2] — MSSV: [22ITyyy] — Vai trò: [Thành viên / Xử lý On-Device OCR & SQLite Database] — Đóng góp: [50%]
-* **🔗 Đường dẫn tải file APK (APK Download Link):**
-  - File nội bộ: `d:\DaNentang\Receipt_OCR_&_Expense_Tracker\APK\vku_expense_ocr.apk`
-  - Kích thước tệp: ~24.5 MB (Tối ưu hóa Release Mode R8 & ProGuard, kiến trúc `android-arm64`)
-  - Đường dẫn Google Drive / Cloud: [Dán link tải APK tại đây]
-* **💻 GitHub Repository:** [https://github.com/nadz1112/Receipt_OCR_Expense_Tracker]
-* **🎥 Video Demo (Optional):** [https://youtu.be/xxx]
+* **Thành viên nhóm:**
+  1. Lê Xuân Hoài Nam — MSSV: 23IT175 — Đóng góp: 100%
+
+* **🔗 Link file APK Trực Tuyến:** [APK/vku_expense_ocr.apk](https://github.com/nadz1112/Receipt_OCR_Expense_Tracker/blob/main/APK/vku_expense_ocr.apk)
+* **💻 GitHub Repository:** [https://github.com/nadz1112/Receipt_OCR_Expense_Tracker](https://github.com/nadz1112/Receipt_OCR_Expense_Tracker)
+* **🎥 Video Demo (Tùy chọn):** chưa có hoá đơn để demo thực tế nên chưa có video thực tế, thầy có thể tải xuống và dùng thử nếu cần liền ạ. em sẽ cập nhật video sớm nhất khi có thể.
 
 ---
 
@@ -70,11 +67,11 @@
 ## 4. HƯỚNG DẪN CÀI ĐẶT & CHẠY ỨNG DỤNG (REPRODUCIBILITY GUIDE)
 
 ### Cách 1: Cài đặt trực tiếp file APK (Khuyến nghị cho chấm điểm & Test nhanh)
-1. Sao chép file APK từ thư mục dự án:  
-   `d:\DaNentang\Receipt_OCR_&_Expense_Tracker\APK\vku_expense_ocr.apk`
+1. Tải file APK từ GitHub:  
+   [`APK/vku_expense_ocr.apk`](https://github.com/nadz1112/Receipt_OCR_Expense_Tracker/blob/main/APK/vku_expense_ocr.apk)
 2. Chuyển file APK vào điện thoại Android hoặc cài đặt qua Android Emulator bằng lệnh ADB:
    ```bash
-   adb install "d:\DaNentang\Receipt_OCR_&_Expense_Tracker\APK\vku_expense_ocr.apk"
+   adb install APK/vku_expense_ocr.apk
    ```
 3. Mở ứng dụng **VKU Expense OCR** trên điện thoại và cấp quyền Camera / Bộ nhớ khi quét hóa đơn.
 
@@ -86,8 +83,9 @@
    - Java JDK: Eclipse Temurin JDK 17 (hoặc OpenJDK 17)
 2. **Các bước thực thi:**
    ```bash
-   # Di chuyển vào thư mục dự án
-   cd C:\BuildTemp\vku_expense_ocr
+   # Clone repo
+   git clone https://github.com/nadz1112/Receipt_OCR_Expense_Tracker.git
+   cd Receipt_OCR_Expense_Tracker
 
    # Cài đặt toàn bộ dependencies
    flutter pub get
